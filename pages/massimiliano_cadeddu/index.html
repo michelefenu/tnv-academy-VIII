@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>La Mia Pizza</title>
+  </head>
+  <body>
+    <header>
+      <a href="/tnv-academy-VIII/index.html" class="logo">La mia Pizza</a>
+      <ul>
+        <li><a href="#ingredienti" class="ingredienti-menu">Ingredienti</a></li>
+        <li><a href="#ricetta" class="ricetta">Ricetta</a></li>
+        <li>
+          <a href="#tab-nutrizionale" class="ricetta">Tabella Nutrizionale</a>
+        </li>
+      </ul>
+    </header>
+
+    <div id="container">
+      <span id="text1"></span>
+      <span id="text2"></span>
+    </div>
+
+    <svg id="filters">
+      <defs>
+        <filter id="threshold">
+          <feColorMatrix
+            in="SourceGraphic"
+            type="matrix"
+            values="1 0 0 0 0
+									0 1 0 0 0
+									0 0 1 0 0
+									0 0 0 255 -140"
+          />
+        </filter>
+      </defs>
+    </svg>
+    <script type="text/javascript" src="animation.js"></script>
+
+    <section class="hero-conteiner">
+      <h1 class="nome-pizza">Pizza Massimiliano</h1>
+      <p class="subhead">La pizza piu buona di sempre</p>
+    </section>
+
+    <section>
+      <div class="hero-img">Immagine di Pizza Massimiliano</div>
+    </section>
+
+    <section class="more-info">
+      <div>
+        <h2 id="ingredienti">Ingredienti</h2>
+        <ul>
+          <li>Mozzarella</li>
+          <li>Provola</li>
+          <li>Melanzane Fritte</li>
+          <li>Rucola</li>
+          <li>Pancetta</li>
+        </ul>
+      </div>
+      <div>
+        <h2 id="ricetta">Ricetta</h2>
+        <p>
+          Friggere le melanzane, tagliuzzare la rucola e poi comporre la pizza.
+        </p>
+        <p class="seconda fase">Ora mettere al forso quanto serve</p>
+      </div>
+      <div>
+        <h2 id="tab_nutrizionale">Tabella Nutrizionale</h2>
+        <div class="table-title">
+          
+          </div>
+          <table class="table-fill">
+          <thead>
+          <tr>
+          <th class="text-left">Valori Medi</th>
+          <th class="text-left">Per Pizza</th>
+          </tr>
+          </thead>
+          <tbody class="table-hover">
+          <tr>
+          <td class="text-left">Carboidrati</td>
+          <td class="text-left">432</td>
+          </tr>
+          <tr>
+          <td class="text-left">proteine</td>
+          <td class="text-left">76345</td>
+          </tr>
+          <tr>
+          <td class="text-left">grassi</td>
+          <td class="text-left">85</td>
+          </tr>
+          <tr>
+          <td class="text-left">fibre</td>
+          <td class="text-left">56</td>
+          </tr>
+          <tr>
+          <td class="text-left">sale</td>
+          <td class="text-left">32</td>
+          </tr>
+          </tbody>
+          </table>
+            
+      </div>
+    </section>
+  </body>
+</html>
