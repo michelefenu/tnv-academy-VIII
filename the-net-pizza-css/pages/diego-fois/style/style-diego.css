@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+* {
+  color: #26120B;
+    font-family: 'Poor Story';
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+}
+
+
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+  
+/* Add responsiveness - on screens less than 1287px wide*/
+@media screen and (max-width: 1287px) {
+  aside{
+    visibility: hidden;
+  }
+  main{
+    display: flex;
+    text-align: center;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    float: none;
+  }
+}
+
+
+
+/* ****************************** navbar ****************************** */
+
+/* Create a sticky/fixed navbar */
+#navbar {
+  background-image: url(../images/diego-img.jpg);
+  top: 0; /* At the top */ 
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  height: 100%;
+  
+  /*background-size: cover;*/
+}
+
+/* Style the navbar links */
+#navbar a {
+  flex-direction: center;
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.1s;
+  font-weight: bold;
+  color: #26120B;
+  text-decoration: none;
+  text-align: center;
+  padding: 13px;
+  justify-content: center;
+}
+
+
+/* Links on mouse-over */
+#navbar #links a:hover {
+  background-color: #8d5829;
+  color: #26120B;
+  /*text-decoration:underline;*/
+}
+
+/* Style the active/current link */
+#navbar a.active {
+  background-color: #8d5829;
+  color: #F2E7AC;
+}
+
+#nameAndDescr {
+  text-align: center;
+  flex-direction: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+  color: #26120B;
+  font-size: 50px;
+}
+
+
+/* ****************************** body ****************************** */
+body{
+  opacity: 96%;
+    background-size: cover;
+    margin: 0%, auto;
+    padding: 0%, auto;
+    border: 0%, auto;
+}
+
+/* ****************************** aside ****************************** */
+aside {
+  float: right;
+  width: 220px;
+  background-color: #F2E7AC;
+  border-radius: 5px;
+  margin:  8px 1% 8px 0;
+  box-shadow: 0 0 3px rgb(228, 228, 228);
+  padding: 5px;
+}
+
+/* **************** single ads on the right *************** */
+#corrList ul li{
+  text-align: center;
+}
+
+#corrList ul li img{
+  margin: 8px 16px 8px 16px;
+  width: 192px;
+  height: 120px;
+  border: 1px solid #F2E7AC;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgb(228, 228, 228);
+}
+
+/* ****************************** main ****************************** */
+article{
+  margin: 8px;
+  padding: 32px;
+}
+
+main {
+  border-radius: 5px;
+  float: left;
+  width: 1200px;
+  margin: 8px;
+  padding: 32px;
+  background-color: #F2E7AC;
+  box-shadow: 0 0 3px rgb(228, 228, 228);
+}
+
+#ingredients{
+  width: 350px;
+  float: left;
+}
+
+#NutrTable{
+  width: 350px;
+  float: right;
+}
+
+#howToMake{
+  justify-content:center;
+  width: 1200px;
+}
+
+#form{
+  justify-content:center;
+}
+
+footer {
+  display: flex;
+  margin-top: 64px;
+  justify-content: space-evenly;
+  background-color: #8C2703;
+  color: white;
+  box-shadow: 0 -3px 5px lightgray;
+  clear: both;
+}
+
+footer section {
+  width: 300px;
+  margin: 8px;
+  padding: 32px;
+}
+
+/* ******************************* prog choice ********************************** */
+
+#choice{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#cEl{
+  position: relative;
+  text-align: center;
+}
+
+#imgLink{
+  margin: 8px 16px 8px 16px;
+  width: 230px;
+  height: 180px;
+  border: 1px solid #F2E7AC;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgb(228, 228, 228);
+  
+}
+
+#cEl a{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 0 6px #F2E7AC;
+}
+
+#choice a:hover{
+  background-color: none;
+  color: #8d5829;
+}
+
+#choice #imgLink:hover{
+  opacity: 90%;
+}
+
+
+
+
+
+/* **************************** carosello ***************************** */
+
+.slide1, .slide2 {
+  display: none}
+img {
+  vertical-align: middle;
+}
+.carosello {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prec, .succ {
+  cursor: pointer;
+  user-select:none;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height:40px;
+  border:2px solid #DDDDDD;
+  color: rgb(45,45,45);
+  font-size: 18px;
+  transition: 0.5s ease;
+  border-radius:50%;
+  text-align: center;
+  line-height: 38px;
+}
+.succ {
+  right: 0;
+}
+.prec:hover, .succ:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+
+
+#supportPage{
+  background-image: url(../images/diego-img.jpg);
+}
