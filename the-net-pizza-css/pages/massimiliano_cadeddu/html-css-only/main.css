@@ -287,8 +287,10 @@ table.customTable {
   border-collapse: collapse;
   border-width: 3px;
   border-color: #754137;
-  border-style: groove;
+  border-style: hidden;
   color: #000000;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #666;
 }
 
 table.customTable td, table.customTable th {
@@ -296,8 +298,17 @@ table.customTable td, table.customTable th {
   border-color: #754137;
   border-style: outset;
   padding: 5px;
+  border: 1px solid #ccc;
 }
 
-table.customTable thead {
-  background-color: #DBDBDB;
+table.customTable thead th {
+  background: lightgrey;
+}
+
+table.customTable thead th:first-of-type {
+  border-top-left-radius: 20px;
+}
+
+table.customTable thead th:last-of-type {
+  border-top-right-radius: 20px;
 }/*# sourceMappingURL=main.css.map */
