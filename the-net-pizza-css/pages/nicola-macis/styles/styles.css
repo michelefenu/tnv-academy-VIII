@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+header {
+    background-image:url("../images/pizza01.jpg");
+    height: 600px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: white;
+    font-family: 'Alfa Slab One';
+    font-size: 80px;
+    text-shadow: 2px 2px 5px black;
+}
+header p {
+    color: white;
+    font-family: 'Alfa Slab One';
+    font-size: 30px;
+    text-shadow: 2px 2px 5px black;
+}
+header h3 {
+    color: white;
+    font-family: 'Akaya Telivigala';
+    font-size: 40px;
+    text-shadow: 2px 2px 5px black;
+}
+section.ingredienti h4 {
+    color:#3792A6;
+}
+
+section.ingredienti {
+    color:#A66B37;
+    width: 900px;
+    margin: 0 auto;
+    font-family: 'Prompt';
+    text-shadow: 2px 2px 5px white;
+
+}
+section.preparazione {
+    color:#A66B37;
+    width: 900px;
+    margin: 0 auto;
+    font-family: 'Prompt';
+    text-shadow: 2px 2px 5px white;
+}
+section.preparazione h4 {
+    color:#3792A6;
+}
+
+section.info {
+    color:#A66B37;
+    width: 900px;
+    margin: 0 auto;
+    font-family: 'Prompt';
+    text-shadow: 2px 2px 5px white;
+}
+
+section.ingredienti ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+}
+section.ingredienti ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+}
+section.ingredienti ul li {
+margin: 8px 16px 8px 0;
+padding:12px;
+width: 192px;
+height: 60px;
+border: 1px solid lightgray;
+border-radius: 5px;
+box-shadow: 0 0 3px rgb(228,228,288);
+position: relative;}
+
+a {
+    color:#3792A6;
+    width: 900px;
+    margin: 0 auto;
+    font-family: 'Prompt';
+    text-shadow: 2px 2px 5px white
+
+}
+selection.return {
+margin: 8px 16px 8px 0;
+padding:12px;
+width: 192px;
+height: 30px;
+color:#3792A6;
+border: 1px solid ;
+border-radius: 5px;
+box-shadow: 0 0 3px rgb(228,228,288);
+position: relative;}
+
+selection.return  {   
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+selection.return {
+    font-size: larger;
+}
+
+
+
+
+
