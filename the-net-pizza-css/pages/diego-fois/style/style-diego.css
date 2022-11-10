@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 
-* {
+body {
   color: #26120B;
     font-family: 'Poor Story';
     margin: 0%;
@@ -266,5 +266,5 @@ img {
 
 
 #supportPage{
-  background-image: url(../images/diego-img.jpg);
+  background-image: url(../images/in\ forno.jpg);
 }
