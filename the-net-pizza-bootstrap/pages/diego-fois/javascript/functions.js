@@ -1,5 +1,5 @@
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
+/*window.onscroll = function() {scrollFunction()};
 
  
 
@@ -21,24 +21,14 @@ function scrollFunction() {
     document.getElementById("afterScrollFooB").style.visibility = "hidden";
   } 
 }
-
-
-function  onClickFunc(element){
-    let countOfClicks = element.count;
-
-
-if(isEven(countOfClicks) === true){
-    element.style.visibility = "visible"
-} else {
-    element.style.visibility = "hidden"}
-}
-
-
-function isEven(num){
-    if (num % 2 === 1){
-        return true;
-    }
-    else{
-        return false;
+*/
+/*
+function onClickFunc(element){
+console.log(element);
+    if(element.style.visibility === "visible"){
+        element.style.visibility = "hidden"
+    } else {
+        element.style.visibility = "visible"
     }
 }
+*/

@@ -12,7 +12,10 @@
   <body id="bd" class="bg-light" background="../diego-fois/images/background-image.jpg">
 
     <!-- Parte navbar -->
-    <!-- before scroll -->
+    <!-- before scroll 
+    
+     style="height: 100%; width: -100%; background-size: cover; background-image: url(https://images.pexels.com/photos/6605171/pexels-photo-6605171.jpeg?cs=srgb&dl=pexels-kampus-production-6605171.jpg&fm=jpg);"
+    -->
     <nav id="beforeScrollNav" class="navbar bg-light fixed-top" style="visibility: hidden;">
       <div class="container-fluid">
         <a class="navbar-brand" href="https://www.thenetvalue.com/tnv-academy/">TNV Academy</a>
@@ -124,37 +127,42 @@
       </nav>
 
       <div id="beforeScrollImg" class="card text-bg-light" >
-        <img src="../diego-fois/images/diego-img.jpg" class="bg-image d-md-block" alt="background-image">
+        <img src="../diego-fois/images/diego-img.jpg" class="img-fluid bg-image d-md-block" alt="background-image">
         <div class="card-img-overlay">
           <h5 class="card-title text-center">PIZZA BBRITISCH</h5>
           <p class="card-text text-center">The ensurence for eating this pizza doesn't cover any kind of death</p>
           <p class="card-text text-center"><small>So! What'd you like to know/see?</small></p>
 
         <div class="row row-cols-6 g-3">
+
+
           <div class="col">
-            <a class="card">
-              <img src="https://images.pexels.com/photos/6605171/pexels-photo-6605171.jpeg?cs=srgb&dl=pexels-kampus-production-6605171.jpg&fm=jpg" class="card-img-top" alt="...">
+            <a class="card" style="overflow: hidden;">
+              <img src="https://images.pexels.com/photos/6605171/pexels-photo-6605171.jpeg?cs=srgb&dl=pexels-kampus-production-6605171.jpg&fm=jpg" class="img-fluid card-img-top" alt="...">
               <div class="card-img-overlay">
                 <h5 class="card-title">Ingredients</h5>
               </div>
             </a>
           </div>
+
           <div class="col">
-            <a class="card">
-              <img src="https://images.pexels.com/photos/3811603/pexels-photo-3811603.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3811603.jpg&fm=jpg" class="card-img-top" alt="...">
+            <a class="card" style="overflow: hidden;">
+              <img src="https://images.pexels.com/photos/3811603/pexels-photo-3811603.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3811603.jpg&fm=jpg" class="img-fluid card-img-top" alt="..." style="overflow: hidden;">
               <div class="card-img-overlay">
                 <h5 class="card-title">Nutritional table</h5>
               </div>
             </a>
           </div>
+
           <div class="col">
-            <a class="card">
-              <img src="https://images.pexels.com/photos/2180874/pexels-photo-2180874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+            <a class="card" style="overflow: hidden;">
+              <img src="https://images.pexels.com/photos/2180874/pexels-photo-2180874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid card-img-top" alt="...">
               <div class="card-img-overlay">
                 <h5 class="card-title">How To Make It</h5>
               </div>
             </a>
           </div>
+
           <div class="col">
             <a class="card">
               <img src="https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?cs=srgb&dl=pexels-alex-andrews-821754.jpg&fm=jpg" class="card-img-top" alt="...">
@@ -163,6 +171,7 @@
               </div>
             </a>
           </div>
+
           <div class="col">
             <a class="card">
               <img src="https://images.pexels.com/photos/4344748/pexels-photo-4344748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
@@ -171,6 +180,7 @@
               </div>
             </a>
           </div>
+
           <div class="col">
             <a class="card">
               <img src="https://images.pexels.com/photos/5727229/pexels-photo-5727229.jpeg?cs=srgb&dl=pexels-erik-mclean-5727229.jpg&fm=jpg" class="card-img-top" alt="...">
@@ -179,6 +189,7 @@
               </div>
             </a>
           </div>
+          
         </div>
 
         </div>
@@ -253,7 +264,6 @@
               </p>
 
               <button 
-              onclick="onClickFunc(ingredients)"
               type="button" 
               class="btn btn-primary"
               style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
