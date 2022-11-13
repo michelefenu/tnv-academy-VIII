@@ -9,13 +9,16 @@
   
   </head>
   
-  <body id="bd" class="bg-light" background="../diego-fois/images/background-image.jpg">
+  <body 
+  id="bd" 
+  class="bg-light" 
+  style="
+        background-image: url(https://images.pexels.com/photos/7130479/pexels-photo-7130479.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        background-size: cover;
+        ">
 
     <!-- Parte navbar -->
-    <!-- before scroll 
-    
-     style="height: 100%; width: -100%; background-size: cover; background-image: url(https://images.pexels.com/photos/6605171/pexels-photo-6605171.jpeg?cs=srgb&dl=pexels-kampus-production-6605171.jpg&fm=jpg);"
-    -->
+    <!-- before scroll nav-->
     <nav id="beforeScrollNav" class="navbar bg-light fixed-top" style="visibility: hidden;">
       <div class="container-fluid">
         <a class="navbar-brand" href="https://www.thenetvalue.com/tnv-academy/">TNV Academy</a>
@@ -30,7 +33,7 @@
           <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="../../../the-net-pizza-javascript/index.html">Home</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="https://www.youtube.com/embed/-Xa1jT9YO04?rel=0&autoplay=1">Press to Get inspired</a>
@@ -70,7 +73,7 @@
         </div>
       </div>
     </nav>
-    <!-- after scroll -->
+    <!-- after scroll nav-->
     <nav id="afterScrollNav" class="navbar bg-light fixed-bottom">
         <div class="container-fluid">
           <a class="navbar-brand" href="https://www.thenetvalue.com/tnv-academy/">TNV Academy</a>
@@ -124,139 +127,194 @@
             </div>
           </div>
         </div>
-      </nav>
-
-      <div id="beforeScrollImg" class="card text-bg-light" >
+    </nav>
+      
+    <!-- first screen mask && card choices -->
+    <div id="beforeScrollImg" class="card fw-bold text-bg-light" >
         <img src="../diego-fois/images/diego-img.jpg" class="img-fluid bg-image d-md-block" alt="background-image">
         <div class="card-img-overlay">
-          <h5 class="card-title text-center">PIZZA BBRITISCH</h5>
-          <p class="card-text text-center">The ensurence for eating this pizza doesn't cover any kind of death</p>
-          <p class="card-text text-center"><small>So! What'd you like to know/see?</small></p>
+          <h5 class="card-title text-center fs-1">PIZZA BBRITISCH</h5>
+          <div class="fs-2">
+            <p class="card-text text-center fs-2r">The ensurence for eating this pizza doesn't cover any kind of death</p>
+            <p class="card-text text-center fs-2"><small>So! What'd you like to know/see?</small></p>
 
-        <div class="row row-cols-6 g-3">
+            <div class="align-self-center" style="width: 85%; padding-left: 15%;">
+              <div class="shadow">
+                <div class="row text-dar">
 
+                  <div class="col-12 col-sm-6 col-md-4 py-2">
+                    <a 
+                    class="card"
+                    href="#ingredintsAndNutritional"
+                    >
+                      <img src="https://images.pexels.com/photos/6605171/pexels-photo-6605171.jpeg?cs=srgb&dl=pexels-kampus-production-6605171.jpg&fm=jpg" class="" alt="..." style="height: 220px;">
+                      <div class="card-img-overlay">
+                        <h5 
+                        class="card-title text-bg-light fw-bold fs-3 text-center"
+                        onmouseover=""
+                        >Ingredients</h5>
+                      </div>
+                    </a>
+                  </div>
 
-          <div class="col">
-            <a class="card" style="overflow: hidden;">
-              <img src="https://images.pexels.com/photos/6605171/pexels-photo-6605171.jpeg?cs=srgb&dl=pexels-kampus-production-6605171.jpg&fm=jpg" class="img-fluid card-img-top" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Ingredients</h5>
+                  <div class="col-12 col-sm-6 col-md-4 py-2">
+                    <a 
+                    class="card"
+                    href="#ingredintsAndNutritional"
+                    >
+                      <img src="https://images.pexels.com/photos/128402/pexels-photo-128402.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="" alt="..." style="height: 220px;">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title text-bg-light fw-bold fs-3 text-center">Nutritional table</h5>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 py-2">
+                    <a 
+                    class="card"
+                    href="#howToMakeThisPizza"
+                    >
+                      <img src="https://images.pexels.com/photos/5953496/pexels-photo-5953496.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="" alt="..." style="height: 220px;">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title text-bg-light fw-bold fs-3 text-center">How To Make It</h5>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 py-2">
+                    <a 
+                    class="card"
+                    href="#drinks"
+                    >
+                      <img src="https://images.pexels.com/photos/667986/pexels-photo-667986.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="" alt="..." style="height: 220px;">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title text-bg-light fw-bold fs-3 text-center">Drinks</h5>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 py-2">
+                    <a 
+                    class="card"
+                    href="#OtherRestaurChoices"
+                    >
+                      <img src="https://images.pexels.com/photos/1698439/pexels-photo-1698439.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="" alt="..." style="height: 220px;">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title text-bg-light fw-bold fs-3 text-center">Other Choices</h5>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 py-2">
+                    <a 
+                    class="card"
+                    href="#ContactUsForm"
+                    >
+                      <img src="https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?cs=srgb&dl=pexels-alex-andrews-821754.jpg&fm=jpg" class="" alt="..." style="height: 220px;">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title text-bg-light fw-bold fs-3 text-center">Contacts</h5>
+                      </div>
+                    </a>
+                  </div>
+                
+                </div>
               </div>
-            </a>
+            </div>
+            
+            <p class="card-text text-center fs-2"><small>Scroll to just see the page</small></p>
           </div>
-
-          <div class="col">
-            <a class="card" style="overflow: hidden;">
-              <img src="https://images.pexels.com/photos/3811603/pexels-photo-3811603.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3811603.jpg&fm=jpg" class="img-fluid card-img-top" alt="..." style="overflow: hidden;">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Nutritional table</h5>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a class="card" style="overflow: hidden;">
-              <img src="https://images.pexels.com/photos/2180874/pexels-photo-2180874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid card-img-top" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">How To Make It</h5>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a class="card">
-              <img src="https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?cs=srgb&dl=pexels-alex-andrews-821754.jpg&fm=jpg" class="card-img-top" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Contacts</h5>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a class="card">
-              <img src="https://images.pexels.com/photos/4344748/pexels-photo-4344748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Other Choises</h5>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a class="card">
-              <img src="https://images.pexels.com/photos/5727229/pexels-photo-5727229.jpeg?cs=srgb&dl=pexels-erik-mclean-5727229.jpg&fm=jpg" class="card-img-top" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Info</h5>
-              </div>
-            </a>
-          </div>
-          
         </div>
-
-        </div>
-      </div>
+    </div>
 
 
     <!-- body -->
     <div class="container text-center">
-        
-      <div id="beforeScrollBaddy" class="col">
-        <div class="py-2">
 
-
+        <div id="ingredintsAndNutritional" class="py-5">
           <div class="card shadow">
-            <img
+            <div class="card text-bg-dark">
+              <img 
               src="https://images.pexels.com/photos/6605171/pexels-photo-6605171.jpeg?cs=srgb&dl=pexels-kampus-production-6605171.jpg&fm=jpg"
-              class="card-img-top"
+              class="card-img-top" 
               alt="Ingredients"
-            /> 
-            <div id="ingredients" class="card-img-overlay textlight" style="visibility: hidden;">
-              <ul class="list-group">
-                <li class="list-group-item active" aria-current="true">Pizza dough - store bought or handmade, enough for one pizza base</li>
-                <li class="list-group-item">Grated cheese</li>
-                <li class="list-group-item">One tomato</li>
-                <li class="list-group-item">One potato</li>
-                <li class="list-group-item">One egg</li>
-                <li class="list-group-item">Two mushrooms</li>
-                <li class="list-group-item">Two sausages</li>
-                <li class="list-group-item">Three rashers of bacon</li>
-                <li class="list-group-item">Five table spoons of baked beans</li>
-                <li class="list-group-item">Half a small tin of tomato puree</li>
-            </ul>
+              id="imageToOpa">
+              <div class="card-img-overlay">
+                <div id="ingredients" class="card-img-bottom textlight" style="visibility: hidden; float: bottom;">
+                  <ul class="list-group">
+                    <li class="list-group-item active" aria-current="true">Pizza dough - store bought or handmade, enough for one pizza base</li>
+                    <li class="list-group-item">Grated cheese</li>
+                    <li class="list-group-item">One tomato</li>
+                    <li class="list-group-item">One potato</li>
+                    <li class="list-group-item">One egg</li>
+                    <li class="list-group-item">Two mushrooms</li>
+                    <li class="list-group-item">Two sausages</li>
+                    <li class="list-group-item">Three rashers of bacon</li>
+                    <li class="list-group-item">Five table spoons of baked beans</li>
+                    <li class="list-group-item">Half a small tin of tomato puree</li>
+                  </ul> 
+                </div>
+              </div>
+              
+              <div class="card-img-overlay">
+                <div id="nutrTable" class="card-img-bottom textlight" style="visibility: hidden; background-color: lightgrey;">
+                  <table class="table card-img-top">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Weight</th>
+                        <th scope="col">RDA/RI</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Calories</td>
+                        <td>874cal</td>
+                        <td>44% RDA/RI</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Carbs</td>
+                        <td>73g</td>
+                        <td>57% RDA/RI</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Sugars</td>
+                        <td>13g</td>
+                        <td>26% RDA/RI</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Protein</td>
+                        <td>47g</td>
+                        <td>87% RDA/RI</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Fats</td>
+                        <td>42g</td>
+                        <td>60% RDA/RI</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Sodium</td>
+                        <td>5g</td>
+                        <td>96% RDA/RI</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>Fibre</td>
+                        <td>17g</td>
+                        <td>55% RDA/RI</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
             </div>
-
-            <div id="nutrTable" class="card-img-overlay textlight" style="visibility: hidden;">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-
             <div class="card-body">
               <h5 class="card-title">Ingredients And Nutritional Table</h5>
               <p class="card-text">
@@ -264,246 +322,463 @@
               </p>
 
               <button 
-              type="button" 
-              class="btn btn-primary"
-              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-              Show Ingredients
+                type="button" 
+                class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                onclick="toggleIngr(ingredients, nutrTable, imageToOpa)"
+                >
+                Show Ingredients
               </button>
 
               <button 
-              type="button" 
-              class="btn btn-primary"
-              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-              Show Nutritional Table
+                type="button" 
+                class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                onclick="toggleIngr(nutrTable, ingredients, imageToOpa)"
+                >
+                Show Nutritional Table
               </button>
+
             </div>
           </div>
-
-
         </div>
-        <div class="py-2">
+        <div id="howToMakeThisPizza" class="py-5">
+          <div id="carouselExampleLight" class="carousel carousel-dark slide" data-bs-ride="carousel">
 
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000000">
+                <img 
+                src="https://images.pexels.com/photos/5953496/pexels-photo-5953496.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
+                class="d-block w-100 h-100" 
+                alt="..."
+                >
+                <div class="carousel-caption d-none d-md-block text-bg-light">
+                  <h5 class="card-title">How to Make</h5>
+                  <p class="card-text">
+                    Here you can find the full tutorial to create this amazing pizza by your own
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="20000">
+                <img 
+                src="https://content.instructables.com/ORIG/F8X/3IPA/GDNIP6KU/F8X3IPAGDNIP6KU.jpg?auto=webp&frame=1&width=933&height=1024&fit=bounds&md=ea55ae6edddff8919887a4e61a97de0a" 
+                class="d-block w-100 h-80" 
+                alt="..."
+                >
+                <div class="carousel-caption d-none d-md-block text-bg-light">
+                  <h5>Step 1: Cut and Fry Potatoes</h5>
+                  <p>
+                    The first thing that needs to be done is to cut the potato 
+                    into slices and fry them. This is necessary as potato 
+                    takes such a long to cook that it would not be completely 
+                    cooked through if you just put it straight onto the pizza 
+                    and into the oven!
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="20000">
+                <img src="https://content.instructables.com/ORIG/FR5/CNWC/GDNIP6KV/FR5CNWCGDNIP6KV.jpg?auto=webp&frame=1&width=1024&height=1024&fit=bounds&md=abb3c5c853bc3a4597aa46750d02452f" class="d-block w-100 h-80" alt="...">
+                <div class="carousel-caption d-none d-md-block text-bg-light">
+                  <h5>Step 2: Chop Ingredients</h5>
+                  <p>
+                    Cut the tomato into slices, and then halve them.
+                    Cut the rashers up into little strips about 1cm thick
+                    Slice the mushrooms thinly
+                    Cut the sausages into cubes
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="20000">
+                <img src="https://content.instructables.com/ORIG/FGD/G00L/GDNIP6KW/FGDG00LGDNIP6KW.jpg?auto=webp&frame=1&width=600&height=1024&fit=bounds&md=abb3c5c853bc3a4597aa46750d02452f" class="d-block w-100 h-80" alt="...">
+                <div class="carousel-caption d-none d-md-block text-bg-light">
+                  <h5>Step 3: Prepare the Pizza Base</h5>
+                  <p>
+                    The second thing that needs to be done is to roll out the 
+                    pizza dough and put it onto your baking tray.
+
+                    I like to put the pizza base onto the baking tray before I add 
+                    the topping. This is best as the base is quite tricky to move 
+                    after you add ingredients, and you risk the ingredients falling 
+                    off as you try to put your pizza base on the tray. So this 
+                    way it is a lot easier!
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="20000">
+                <img src="https://content.instructables.com/ORIG/FNJ/UWE5/GDPPM95J/FNJUWE5GDPPM95J.jpg?auto=webp&frame=1&width=400&height=1024&fit=bounds&md=ab018223476268f3d22228eb68be02c2" class="d-block w-100 h-80" alt="...">
+                <div class="carousel-caption d-none d-md-block text-bg-light">
+                  <h5>Step 4: Add Ingredients</h5>
+                  <p>
+                    Now it is time to add the ingredients to the pizza!
+
+                    First of all you need to spread the tomato puree all over the 
+                    pizza base, then sprinkle the cheese out evenly. Add the rest 
+                    of the ingredients one by one, first the potatoes, then the 
+                    sausages, bacon, mushrooms, tomatoes and baked beans.
+                    
+                    NB. Do not add the egg to the pizza just yet
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="20000">
+                <img src="https://content.instructables.com/ORIG/F7M/5T0U/GDNJ4CU5/F7M5T0UGDNJ4CU5.jpg?auto=webp&frame=1&width=933&height=1024&fit=bounds&md=9635c0a65f424a9027afcb6cb360dac1" class="d-block w-100 h-80" alt="...">
+                <div class="carousel-caption d-none d-md-block text-bg-light">
+                  <h5>Step 5: Cook the Pizza</h5>
+                  <p>
+                    Yip, after you have added all the ingredients it is 
+                    time to put your pizza into the oven!
+
+                    I pre-heated the oven to 220'c and then put the pizza in. 
+                    Set your timer for eight minutes, as once the pizza has been 
+                    in for eight minutes it is time to add the egg on top.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="20000">
+                <img src="https://content.instructables.com/ORIG/FBK/3YQ2/GDPPM968/FBK3YQ2GDPPM968.jpg?auto=webp&frame=1&width=600&height=1024&fit=bounds&md=27b1cdab10cee72f5c37230d84be2e44" class="d-block w-100 h-80" alt="...">
+                <div class="carousel-caption d-none d-md-block text-bg-light">
+                  <h5>Step 6: Add the Egg</h5>
+                  <p>
+                    To add the egg it is best to first crack the egg into a 
+                    glass or bowl. This means that if any of the egg shell 
+                    breaks off, it is easy to fish out of the bowl instead 
+                    of trying to find it once you have added the egg to the pizza.
+
+                    Once you have cracked the egg, simply pour it onto the middle
+                    of your pizza and pop it back in the oven for another eight 
+                    minutes, or until the egg white is completely looked through.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="20000">
+                <img src="https://content.instructables.com/ORIG/FDX/DJAM/GDNJ4CU7/FDXDJAMGDNJ4CU7.jpg?auto=webp&frame=1&width=933&height=1024&fit=bounds&md=de3e586e60a3991836dee6b5cb434578" class="d-block w-100 h-80" alt="...">
+                <div class="carousel-caption d-none d-md-block text-bg-light">
+                  <h5>Step 7: Eat That thing Boy!</h5>
+                  <p>
+                    After your pizza has been in for a total of 16 minutes, 
+                    or once the egg white is completely cooked through, 
+                    your pizza is now ready.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleLight" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleLight" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div id="drinks" class="py-5">
 
           <div class="card shadow">
+            <div class="row">
 
-            <div id="carouselExampleLight" class="carousel carousel-dark slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="1000000">
-                  <img src="../diego-fois/images/in preparazione.jpg" class="d-block w-100 h-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block text-bg-light">
-                    <h5 class="card-title">How to Make</h5>
+              <div id="beers" class="col-12 col-sm-6 col-md-4 py-2">
+                <div class="card shadow">
+                  <img
+                    src="https://images.pexels.com/photos/991970/pexels-photo-991970.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top"
+                    alt="Tagliere salumi"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Beer - 0,12€</h5>
                     <p class="card-text">
-                      Here you can find the full tutorial to create this amazing pizza by your own
-                    </p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="20000">
-                  <img src="../diego-fois/images/diego-image.jpg" class="d-block w-100 h-80" alt="...">
-                  <div class="carousel-caption d-none d-md-block text-bg-light">
-                    <h5>Step 1: Cut and Fry Potatoes</h5>
-                    <p>
-                      The first thing that needs to be done is to cut the potato 
-                      into slices and fry them. This is necessary as potato 
-                      takes such a long to cook that it would not be completely 
-                      cooked through if you just put it straight onto the pizza 
-                      and into the oven!
-                    </p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="20000">
-                  <img src="../diego-fois/images/diego-image.jpg" class="d-block w-100 h-80" alt="...">
-                  <div class="carousel-caption d-none d-md-block text-bg-light">
-                    <h5>Step 2: Chop Ingredients</h5>
-                    <p>
-                      Cut the tomato into slices, and then halve them.
-                      Cut the rashers up into little strips about 1cm thick
-                      Slice the mushrooms thinly
-                      Cut the sausages into cubes
-                    </p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="20000">
-                  <img src="../diego-fois/images/diego-image.jpg" class="d-block w-100 h-80" alt="...">
-                  <div class="carousel-caption d-none d-md-block text-bg-light">
-                    <h5>Step 3: Prepare the Pizza Base</h5>
-                    <p>
-                      The second thing that needs to be done is to roll out the 
-                      pizza dough and put it onto your baking tray.
-
-                      I like to put the pizza base onto the baking tray before I add 
-                      the topping. This is best as the base is quite tricky to move 
-                      after you add ingredients, and you risk the ingredients falling 
-                      off as you try to put your pizza base on the tray. So this 
-                      way it is a lot easier!
-                    </p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="20000">
-                  <img src="../diego-fois/images/diego-image.jpg" class="d-block w-100 h-80" alt="...">
-                  <div class="carousel-caption d-none d-md-block text-bg-light">
-                    <h5>Step 4: Add Ingredients</h5>
-                    <p>
-                      Now it is time to add the ingredients to the pizza!
-
-                      First of all you need to spread the tomato puree all over the 
-                      pizza base, then sprinkle the cheese out evenly. Add the rest 
-                      of the ingredients one by one, first the potatoes, then the 
-                      sausages, bacon, mushrooms, tomatoes and baked beans.
-                      
-                      NB. Do not add the egg to the pizza just yet
-                    </p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="20000">
-                  <img src="../diego-fois/images/diego-image.jpg" class="d-block w-100 h-80" alt="...">
-                  <div class="carousel-caption d-none d-md-block text-bg-light">
-                    <h5>Step 5: Cook the Pizza</h5>
-                    <p>
-                      Yip, after you have added all the ingredients it is 
-                      time to put your pizza into the oven!
-
-                      I pre-heated the oven to 220'c and then put the pizza in. 
-                      Set your timer for eight minutes, as once the pizza has been 
-                      in for eight minutes it is time to add the egg on top.
-                    </p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="20000">
-                  <img src="../diego-fois/images/diego-image.jpg" class="d-block w-100 h-80" alt="...">
-                  <div class="carousel-caption d-none d-md-block text-bg-light">
-                    <h5>Step 6: Add the Egg</h5>
-                    <p>
-                      To add the egg it is best to first crack the egg into a 
-                      glass or bowl. This means that if any of the egg shell 
-                      breaks off, it is easy to fish out of the bowl instead 
-                      of trying to find it once you have added the egg to the pizza.
-
-                      Once you have cracked the egg, simply pour it onto the middle
-                      of your pizza and pop it back in the oven for another eight 
-                      minutes, or until the egg white is completely looked through.
-                    </p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="20000">
-                  <img src="../diego-fois/images/diego-image.jpg" class="d-block w-100 h-80" alt="...">
-                  <div class="carousel-caption d-none d-md-block text-bg-light">
-                    <h5>Step 7: Eat That thing Boy!</h5>
-                    <p>
-                      After your pizza has been in for a total of 16 minutes, 
-                      or once the egg white is completely cooked through, 
-                      your pizza is now ready.
+                      When adults think of pizza, they almost automatically think about having a cold beer too.
                     </p>
                   </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleLight" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleLight" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              
+              <div id="cocktails" class="col-12 col-sm-6 col-md-4 py-2">
+                <div class="card shadow">
+                  <img
+                    src="https://images.pexels.com/photos/1189257/pexels-photo-1189257.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top"
+                    alt="Tagliere salumi"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Cocktail - 5€</h5>
+                    <p class="card-text">
+                      The endless creativity of cocktails lends itself well to the innovative world of pizza making.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="sodas" class="col-12 col-sm-6 col-md-4 py-2">
+                <div class="card shadow">
+                  <div class="card-image">
+                    <img
+                      src="https://images.pexels.com/photos/3407777/pexels-photo-3407777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                      class="card-img-top"
+                      alt="Zuppa di Mare"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Soda - 2,50€</h5>
+                    <p class="card-text">
+                       Most of us drank soda with it! In italy the tradition is to eat pizza on Saturday.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="icedTeas" class="col-12 col-sm-6 col-md-4 py-2">
+                <div class="card shadow">
+                  <img
+                    src="https://images.pexels.com/photos/1141626/pexels-photo-1141626.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top"
+                    alt="Tagliere salumi"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Iced Tea - 3€</h5>
+                    <p class="card-text">
+                      Iced tea and pizza remain an iconic summertime combination. There is nothing more refreshing than washing down a slice of pizza with ice-cold iced tea.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div id="wines" class="col-12 col-sm-6 col-md-4 py-2">
+                <div class="card shadow">
+                  <img
+                    src="https://images.pexels.com/photos/3019019/pexels-photo-3019019.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="card-img-top"
+                    alt="Tagliere salumi"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Wine - 25/1500€</h5>
+                    <p class="card-text">
+                      Wine famously pairs perfectly with Italian foods. While not necessarily a natural combination, wine is a delicious drink to pair with pizza. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="SparklingDrinks" class="col-12 col-sm-6 col-md-4 py-2">
+                <div class="card shadow">
+                  <div class="card-image">
+                    <img
+                      src="https://images.pexels.com/photos/4085278/pexels-photo-4085278.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                      class="card-img-top"
+                      alt="Zuppa di Mare"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Sparkling Drink - FREE</h5>
+                    <p class="card-text">
+                      Why drink boring still water when you can have a few bubbles? I know it seems just water but i ensure this is more than just water
+                    </p>
+                  </div>
+                </div>
+              </div>
+
             </div>
-            
           </div>
 
-
-          
-
-
         </div>
-        <div class="py-2">
-
+        <div id="OtherRestaurChoices" class="py-5">
 
           <div class="card shadow">
-            <img
-              src="../diego-fois/images/in forno.jpg"
-              class="card-img-top"
-              alt="Ingredients"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Ingredients</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+            <div class="row">
+
+              <div class="col-12 col-sm-6 col-md-4 py-2">
+                <a 
+                class="card shadow"
+                href="https://www.opentable.com/r/maiori-cagliari?corrid=18f4d14b-342b-4af4-b39f-8146ad6ec6d6&avt=eyJ2IjoyLCJtIjoxLCJwIjowLCJzIjowLCJuIjowfQ&p=2&sd=2022-11-12T19%3A00%3A00"
+                >
+                  <img
+                    src="https://resizer.otstatic.com/v2/photos/legacy/2/41914445.jpg"
+                    class="card-img-top"
+                    alt="Tagliere salumi"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-bg-light">Maiori - Cagliari - $$</h5>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col-12 col-sm-6 col-md-4 py-2">
+                <a 
+                class="card shadow"
+                href="https://www.opentable.com/r/puccini-street-cagliari?corrid=18f4d14b-342b-4af4-b39f-8146ad6ec6d6&avt=eyJ2IjoyLCJtIjoxLCJwIjowLCJzIjowLCJuIjowfQ&p=2&sd=2022-11-12T19%3A00%3A00"
+                >
+                  <img
+                    src="https://resizer.otstatic.com/v2/photos/legacy/1/49063494.jpg"
+                    class="card-img-top"
+                    alt="Tagliere salumi"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-bg-light">Puccini Street - $$</h5>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-4 py-2">
+                <a 
+                class="card shadow"
+                href="https://www.opentable.com/r/cantera-porto-cervo-golfo-pevero?corrid=18f4d14b-342b-4af4-b39f-8146ad6ec6d6&avt=eyJ2IjoyLCJtIjoxLCJwIjowLCJzIjowLCJuIjowfQ&p=2&sd=2022-11-12T19%3A00%3A00"
+                >
+                  <div class="card-image">
+                    <img
+                      src="https://resizer.otstatic.com/v2/photos/legacy/3/49016472.jpg"
+                      class="card-img-top"
+                      alt="Zuppa di Mare"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-bg-light">Cantera Porto Cervo - $$$$</h5>
+                  </div>
+                </a>
+              </div>
+
+
             </div>
           </div>
 
-
+        </div>
+        <div id="ContactUsForm" class="py-5">
+          <div class="contacts shadow bg-opacity-75 bg-white">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="section-title">Contacts</h2>
+                <div class="separator"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p class="my-4">
+                  Call 333 123456789 or you can fill in the modul down here:
+              </div>
+            </div>
+    
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="mb-3">
+                <label for="surname" class="form-label">Surname</label>
+                <input type="text" class="form-control" id="surname" />
+              </div>
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control"
+                  placeholder="Insert your order here..."
+                  id="order"
+                  style="height: 100px"
+                ></textarea>
+                <label for="order">Insert your order here...</label>
+              </div>
+    
+              <fieldset class="mb-3">
+                <legend>Additional services</legend>
+                <input type="checkbox" name="services" /> cutlery
+                <br />
+                <input type="checkbox" name="services" /> sliced pizza
+                <br />
+                <input type="checkbox" name="services" />Premium delivery
+              </fieldset>
+    
+              <fieldset class="mb-3">
+                <legend>Servizi di pagamento</legend>
+                <input type="radio" name="payment" /> Cash
+                <br />
+                <input type="radio" name="payment" /> Satispay
+                <br />
+                <input type="radio" name="payment" /> Credit card
+              </fieldset>
+    
+              <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
 
 
-      </div>
     </div>
 
     <!-- footer big screen -->
     <footer 
     id="afterScrollFooB" 
     class="container-fluid p-2 p-lg-5 d-none d-md-block bg-light"
-    style="visibility: hidden;">
+    >
     <div class="row">
         <section class="opening-hours col-12 col-md-6 col-lg-4">
-        <h2 class="footer-section-title">Orari di Apertura</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Giorno</th>
-                <th>Mattina</th>
-                <th>Pomeriggio</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Lunedì</td>
-                <td>Chiuso</td>
-                <td>Chiuso</td>
-            </tr>
-            <tr>
-                <td>Martedì</td>
-                <td>12:00 - 15:00</td>
-                <td>19:00 - 24:00</td>
-            </tr>
-            <tr>
-                <td>Mercoledì</td>
-                <td>12:00 - 15:00</td>
-                <td>19:00 - 24:00</td>
-            </tr>
-            <tr>
-                <td>Giovedì</td>
-                <td>12:00 - 15:00</td>
-                <td>19:00 - 24:00</td>
-            </tr>
-            <tr>
-                <td>Venerdì</td>
-                <td>12:00 - 15:00</td>
-                <td>19:00 - 24:00</td>
-            </tr>
-            <tr>
-                <td>Sabato</td>
-                <td>12:00 - 15:00</td>
-                <td>19:00 - 24:00</td>
-            </tr>
-            <tr>
-                <td>Domenica</td>
-                <td>12:00 - 15:00</td>
-                <td>19:00 - 24:00</td>
-            </tr>
-            </tbody>
-        </table>
+          <h2 class="footer-section-title">Opening time</h2>
+          <table>
+              <thead>
+                  <tr>
+                      <th></th>
+                      <th>Morning</th>
+                      <th>Evening</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Monday</td>
+                      <td>Closed</td>
+                      <td>20:00 - 24:00</td>
+                  </tr>
+                  <tr>
+                      <td>Tuesday</td>
+                      <td>12:00 - 15:00</td>
+                      <td>20:00 - 24:00</td>
+                  </tr>
+                  <tr>
+                      <td>Wednesday</td>
+                      <td>12:00 - 15:00</td>
+                      <td>20:00 - 24:00</td>
+                  </tr>
+                  <tr>
+                      <td>Thursday</td>
+                      <td>12:00 - 15:00</td>
+                      <td>20:00 - 24:00</td>
+                  </tr>
+                  <tr>
+                      <td>Friday</td>
+                      <td>12:00 - 15:00</td>
+                      <td>20:00 - 24:00</td>
+                  </tr>
+                  <tr>
+                      <td>Saturday</td>
+                      <td>12:00 - 15:00</td>
+                      <td>20:00 - 24:00</td>
+                  </tr>
+                  <tr>
+                      <td>Sunday</td>
+                      <td>12:00 - 15:00</td>
+                      <td>20:00 - 24:00</td>
+                  </tr>
+              </tbody>
+          </table>
         </section>
         <section class="where-we-are col-12 col-md-6 col-lg-4">
-        <h2 class="footer-section-title">Dove Siamo</h2>
+        <h2 class="footer-section-title">Where We Are</h2>
         <iframe
             width="100%"
             frameborder="0"
@@ -516,16 +791,62 @@
         </section>
         <section class="where-we-are col-12 col-md-6 col-lg-4">
         <h2 class="footer-section-title">Credits</h2>
-        Questo sito è realizzato dagli studenti della TNV Academy
+        <ul>
+          <li>This website has been made by the TNV Academy students</li>
+          <li>Some information are taken from google or other sources online, the sources are reported directly in the links of the objects</li>
+        </ul>
         </section>
     </div>
     </footer>
     <!-- footer small screen -->
     <footer 
     id="afterScrollFooS" 
-    class="container-fluid p-2 d-block d-md-none bg-light"
-    style="visibility: hidden;">
-        footer per schermo piccolo
+    class="bg-light text-center"
+    >
+      <!-- Grid container -->
+      <div class="container pb-0 p-2 d-block d-md-none ">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+    
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgb(255, 255, 255);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
