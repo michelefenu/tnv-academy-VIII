@@ -8,18 +8,26 @@ import { MenuItem } from 'src/models/MenuItem';
 })
 export class MenuComponent implements OnInit {
 
-  antipastiItems: MenuItem[] = [];
-  primiItems: MenuItem[] = [];
-  dolciItems: MenuItem[] = [];
+  categories: string[] = [];
 
   constructor() { 
 
   }
 
   ngOnInit(): void {
-    this.antipastiItems = this.piattiFromApi.filter(x => x.category === 'antipasti');
-    this.primiItems = this.piattiFromApi.filter(x => x.category === 'primi');
-    this.dolciItems = this.piattiFromApi.filter(x => x.category === 'dolci');
+    for(let piatto of this.piattiFromApi) {
+      if(!this.categories.includes(piatto.category)) {
+        this.categories.push(piatto.category);
+      }
+    }
+
+    // this.categories = [...new Set(this.piattiFromApi.map(x => x.category))];
+
+    console.log(this.categories);
+  }
+
+  getMenuItemsByCategory(category: string) {
+    return this.piattiFromApi.filter(x => x.category === category);
   }
 
 
@@ -278,6 +286,30 @@ export class MenuComponent implements OnInit {
         "title": "Tiramisù",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "imageUrl": "https://michelefenu.github.io/tnv-academy-VIII/the-net-pizza-bootstrap/assets/images/tiramisu.jpg",
+        "price": 6,
+        "available": true,
+        "ingredients": [
+          "Savoiardi",
+          "Zabaione",
+          "Caffe"
+        ],
+        "allergens": ["Glutine"],
+        "nutritionalValues": {
+          "kcal": "145",
+          "totalFat": "6g",
+          "saturatedFat": "6g",
+          "cholesterol": "53mg",
+          "carbohydrate": "1,5g",
+          "sodium": "1203 mg",
+          "protein": "21g"
+        }
+      },
+      {
+        "id": 12,
+        "category": "Bevande",
+        "title": "Coca Cola",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "imageUrl": "https://michelefenu.github.io/tnv-academy-VIII/the-net-pizza-bootstrap/assets/images/coca-cola.jpg",
         "price": 6,
         "available": true,
         "ingredients": [

@@ -5,7 +5,9 @@
       <div class="separator"></div>
     </div>
   </div>
-  <app-menu-section title="antipasti" [menuItems]="antipastiItems"></app-menu-section>
-  <app-menu-section title="primi" [menuItems]="primiItems"></app-menu-section>
-  <app-menu-section title="dolci" [menuItems]="dolciItems"></app-menu-section>
+  <app-menu-section 
+    *ngFor="let category of categories" 
+    [title]="category" [menuItems]="getMenuItemsByCategory(category)">
+  </app-menu-section>
+  
 </section>
