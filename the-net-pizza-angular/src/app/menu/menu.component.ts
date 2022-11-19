@@ -20,7 +20,7 @@ export class MenuComponent implements OnInit {
         this.categories.push(piatto.category);
       }
     }
-
+    // Alternativa ES6 usare i Set :)
     // this.categories = [...new Set(this.piattiFromApi.map(x => x.category))];
 
     console.log(this.categories);
