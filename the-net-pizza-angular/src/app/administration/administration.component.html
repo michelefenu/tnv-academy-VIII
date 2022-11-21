@@ -1,0 +1,11 @@
+<form #menuItemForm="ngForm" (ngSubmit)="onSubmit(menuItemForm)">
+    <div class="mb-3">
+        <label for="title" class="form-label">Nome</label>
+        <input [ngModel] name="title" type="text" class="form-control" id="title" placeholder="Inserisci il nome del piatto...">
+      </div>      
+      <div class="mb-3">
+        <label for="description" class="form-label">Descrizione</label>
+        <input [ngModel] name="description" type="text" class="form-control" id="description" placeholder="Inserisci la descrizione del piatto...">
+      </div> 
+      <button type="submit" class="btn btn-primary">Salva Piatto</button>
+</form>
