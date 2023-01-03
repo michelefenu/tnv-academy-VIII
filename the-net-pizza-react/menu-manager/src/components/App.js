@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PiattiEconomici from "./PiattiEconomici";
 import Table from "./Table";
 
 const menu = [
@@ -18,9 +19,15 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="row">
         <h1>{this.state.title}</h1>
-        <Table menu={this.state.menu} removeMenuItem={this.removeMenuItem} />
+        <div className="col-8">
+          <Table menu={this.state.menu} removeMenuItem={this.removeMenuItem} />
+        </div>
+        <div className="col-4">
+          <PiattiEconomici piatti={this.state.menu} soglia="8"/>
+          <PiattiEconomici piatti={this.state.menu} soglia="20"/>
+        </div>
       </div>
     );
   }
