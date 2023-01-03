@@ -23,21 +23,23 @@ export default class App extends Component {
       <div className="container-fluid">
         <div className="row">
           <h1>{this.state.title}</h1>
-          <div className="col-8">
-            <Table
-              menu={this.state.menu}
-              removeMenuItem={this.removeMenuItem}
-            />
+          <div className="col-7">
+            <div className="col box mt-3 p-3">
+              <Table
+                menu={this.state.menu}
+                removeMenuItem={this.removeMenuItem}
+              />
+            </div>
+            <div className="col box mt-3 p-3">
+              <AddPiatto handleAddPiatto={this.handleAddPiatto} />
+            </div>
           </div>
-          <div className="col-4">
+        <div className="col-5">
+          <div className="col box m-3 p-3">
             <PiattiEconomici piatti={this.state.menu} soglia="8" />
             <PiattiEconomici piatti={this.state.menu} soglia="20" />
           </div>
         </div>
-        <div className="row">
-          <div className="col-6">
-            <AddPiatto handleSubmit={this.handleSubmit} />
-          </div>
         </div>
       </div>
     );
@@ -53,7 +55,7 @@ export default class App extends Component {
   handleAddPiatto = (piatto) => {
     this.setState({
       ...this.state,
-      menu: [...this.state.menu, piatto]
+      menu: [...this.state.menu, piatto],
     });
   };
 }

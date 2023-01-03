@@ -31,7 +31,7 @@ export default class AddPiatto extends Component {
           Categoria
         </label>
         <select
-          className="form-control"
+          className="form-select"
           type="text"
           name="category"
           id="category"
