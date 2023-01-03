@@ -28,18 +28,19 @@ export default class App extends Component {
               <Table
                 menu={this.state.menu}
                 removeMenuItem={this.removeMenuItem}
+                editMenuItem={this.editMenuItem}
               />
             </div>
             <div className="col box mt-3 p-3">
               <AddPiatto handleAddPiatto={this.handleAddPiatto} />
             </div>
           </div>
-        <div className="col-5">
-          <div className="col box m-3 p-3">
-            <PiattiEconomici piatti={this.state.menu} soglia="8" />
-            <PiattiEconomici piatti={this.state.menu} soglia="20" />
+          <div className="col-5">
+            <div className="col box m-3 p-3">
+              <PiattiEconomici piatti={this.state.menu} soglia="8" />
+              <PiattiEconomici piatti={this.state.menu} soglia="20" />
+            </div>
           </div>
-        </div>
         </div>
       </div>
     );
@@ -49,6 +50,15 @@ export default class App extends Component {
     this.setState({
       ...this.state,
       menu: this.state.menu.filter((e, i) => index !== i),
+    });
+  };
+
+  editMenuItem = (index, menuItem) => {
+    this.setState({
+      ...this.state,
+      menu: this.state.menu.map((element, i) =>
+        i === index ? menuItem : element
+      ),
     });
   };
 

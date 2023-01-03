@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 export default class AddPiatto extends Component {
   initialState = {
-    name: "",
-    category: "",
-    price: "",
+    name: '',
+    category: '',
+    price: '',
   };
 
   state = this.initialState;
