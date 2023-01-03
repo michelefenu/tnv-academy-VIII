@@ -6,9 +6,9 @@ const PiattiEconomici = ({ piatti, soglia }) => {
       <h2>Piatti che costano meno di {soglia} €</h2>
       <ul>
         {piatti
-          .filter((x) => x.price < soglia)
-          .map((x) => (
-            <li>{x.name} - {x.price}€</li>
+          .filter((x) => x.price < +soglia)
+          .map((x, index) => (
+            <li key={index}>{x.name} - {x.price}€</li>
           ))}
       </ul>
     </div>

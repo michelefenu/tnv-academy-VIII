@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PiattiEconomici from "./PiattiEconomici";
 import Table from "./Table";
+import AddPiatto from "./AddPiatto";
 
 const menu = [
   { name: "Margherita", category: "pizze", price: 7 },
@@ -19,14 +20,24 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="row">
-        <h1>{this.state.title}</h1>
-        <div className="col-8">
-          <Table menu={this.state.menu} removeMenuItem={this.removeMenuItem} />
+      <div className="container-fluid">
+        <div className="row">
+          <h1>{this.state.title}</h1>
+          <div className="col-8">
+            <Table
+              menu={this.state.menu}
+              removeMenuItem={this.removeMenuItem}
+            />
+          </div>
+          <div className="col-4">
+            <PiattiEconomici piatti={this.state.menu} soglia="8" />
+            <PiattiEconomici piatti={this.state.menu} soglia="20" />
+          </div>
         </div>
-        <div className="col-4">
-          <PiattiEconomici piatti={this.state.menu} soglia="8"/>
-          <PiattiEconomici piatti={this.state.menu} soglia="20"/>
+        <div className="row">
+          <div className="col-6">
+            <AddPiatto handleSubmit={this.handleSubmit} />
+          </div>
         </div>
       </div>
     );
@@ -36,6 +47,13 @@ export default class App extends Component {
     this.setState({
       ...this.state,
       menu: this.state.menu.filter((e, i) => index !== i),
+    });
+  };
+
+  handleAddPiatto = (piatto) => {
+    this.setState({
+      ...this.state,
+      menu: [...this.state.menu, piatto]
     });
   };
 }
